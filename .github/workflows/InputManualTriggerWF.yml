@@ -29,4 +29,5 @@ jobs:
         id: sum
         run: |
           echo "::set-output name=sum::$((${{ inputs.number1 }} + ${{ inputs.number2 }}))"
+          echo "sum is ${{steps.sum.outputs.sum}}"
           echo test, and deploy your project.
