@@ -20,4 +20,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo "${{ vars.PROJECT }}"
-          echo Configuration Variable"
+          echo "Configuration Variable"
