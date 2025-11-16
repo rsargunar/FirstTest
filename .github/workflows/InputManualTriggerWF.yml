@@ -6,7 +6,7 @@ name: InputManualTriggerWF
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-input:
+inputs:
   number1:
     describtion: 'First Number'
     default: 0
@@ -28,5 +28,5 @@ jobs:
       - name: Add 2 Numbers
         id: sum
         run: |
-          echo "::set-output name=sum::${{${{input.number1}}+${{inputnumber2}}}}"
+          echo "::set-output name=sum::${{${{inputs.number1}}+${{inputs.number2}}}}"
           echo test, and deploy your project.
